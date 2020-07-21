@@ -11,20 +11,73 @@
 
 <body>
     <header>
-        <div class="navbar navbar-dark bg-dark shadow-sm text-center">
-            <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary">Left</button>
-                <button type="button" class="btn btn-secondary">Middle</button>
-                <button type="button" class="btn btn-secondary">Right</button>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#">About</a>
+                    <a class="nav-item nav-link" href="#">Projects</a>
+                    <a class="nav-item nav-link" href="#">Resume</a>
+                </ul>
             </div>
-        </div>
+        </nav>
     </header>
     <main role="main">
         <section class="jumbotron text-center">
             <h1>Hello, I'm Peter Del Col</h1>
-            <p>Full stack and applications developer</p>
+            <p>Full stack and application developer</p>
         </section>
         <section>
+            <div class="container-sm">
+                <h3>About Me</h3>
+                <hr class="my-4">
+                <p class="content">
+                    I am a Software Developer and Volunteer Firefighter/EMT. My background includes Application, Web, and Business Management.
+                    Some of my work includes migrating infrastructure to a microservice model to provide a better SaaS structure. Specialize in backend development
+                    and ensuring safe and secure software for customers. Promoted to the rank of Captain for my fire station for which my role is to maintain
+                    the fleet of vehicles and equipment while off call. While on call my duties are to maintain the safety of my crew on scene while also accomplishing the goals
+                    of whatever call for service we have responded to.
+                </p>
+            </div>
+            <div class="container-sm">
+                <h3>Projects</h3>
+                <hr class="my-4">
+                <div class="card-deck">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Bryx-Home</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"></h6>
+                        <p class="card-text">Created a python program to check for calls from an API to then log the call and turn on the Hue lights in my bedroom to allow me to wake up at night for calls</p>
+                        <a href="https://github.com/pdelcol/Bryx-Home" class="card-link">Code</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Homelab</h5>
+                        <p class="card-text">Built and set up a network in my house that allows me to learn new technologies and practice new skills.
+                        The servers and systems are non-production but allows me free reign on deployment and test technologies as well as being able to provide
+                        secure storage and backup solutions.</p>
+                    </div>
+                </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Voting Project</h5>
+                            <p class="card-text">Class project to design and create a secure online voting system that uses a new technology. We opted for a blockchain system that allows for distributed
+                            saving and storage of each vote while maintaining the privacy of each voter.</p>
+                            <a href="https://github.com/pdelcol/VotingProject" class="card-link">Code</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Cloud Monitor</h5>
+                            <p class="card-text">Proprietary software for Alpine Software Corp. A Python Service to check a list of our services and restart them accordingly.
+                                A website then displays when the last POST time of the server was and displays a list of every service status allowing us to monitor our cloud infrastructure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </section>
     </main>

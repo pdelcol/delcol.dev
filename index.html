@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Peter Del Col</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home</a>
-                    <a class="nav-item nav-link" href="#">About</a>
-                    <a class="nav-item nav-link" href="#">Projects</a>
-                    <a class="nav-item nav-link" href="#">Resume</a>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home</a>
+                <a class="nav-item nav-link" href="#">About</a>
+                <a class="nav-item nav-link" href="#">Projects</a>
+                <a class="nav-item nav-link" href="#">Resume</a>
+            </ul>
+        </div>
+    </nav>
     <main role="main">
-        <section class="jumbotron text-center">
+        <section class="jumbotron">
             <h1>Hello, I'm Peter Del Col</h1>
             <p>Full stack and application developer</p>
         </section>
@@ -32,13 +32,15 @@
                 <h3>About Me</h3>
                 <hr class="my-4">
                 <p class="content">
-                    I am a Software Developer and Volunteer Firefighter/EMT. My background includes Application, Web, and Business Management.
+                    I am a Software Developer and Volunteer Firefighter/EMT. My background includes Application and Web Development.
                     Some of my work includes migrating infrastructure to a microservice model to provide a better SaaS structure. Specialize in backend development
                     and ensuring safe and secure software for customers. Promoted to the rank of Captain for my fire station for which my role is to maintain
                     the fleet of vehicles and equipment while off call. While on call my duties are to maintain the safety of my crew on scene while also accomplishing the goals
                     of whatever call for service we have responded to.
                 </p>
             </div>
+        </section>
+        <section>
             <div class="container-sm">
                 <h3>Projects</h3>
                 <hr class="my-4">
@@ -71,14 +73,13 @@
                         <div class="card-body">
                             <h5 class="card-title">Cloud Monitor</h5>
                             <p class="card-text">Proprietary software for Alpine Software Corp. A Python Service to check a list of our services and restart them accordingly.
-                                A website then displays when the last POST time of the server was and displays a list of every service status allowing us to monitor our cloud infrastructure.
+                                A NodeJS website then displays when the last POST time of the server was and displays a list of every service status allowing us to monitor our cloud infrastructure.
+                                Utilizes Socket.IO to allow for data refresh without reloading the page.
                             </p>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </section>
     </main>
 </body>

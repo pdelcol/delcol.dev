@@ -11,9 +11,12 @@
     text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
 }
 .container{
-    padding-bottom:18em;
+    padding-bottom:15em;
 }
 .container img{
-    height:400px;
+    height:300px;
+    width:300px;
     padding-right:2em;
+    overflow-y:hidden;
+    object-fit:cover;
 }

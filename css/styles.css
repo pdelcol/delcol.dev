@@ -1,4 +1,19 @@
 .jumbotron {
-    padding: 10em;
+    padding: 15em;
     text-align:center;
+    background-image: url("../images/code-background.jpg");
+    color:floralwhite;
+}
+.jumbotron h1{
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+.jumbotron p{
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+.container{
+    padding-bottom:18em;
+}
+.container img{
+    height:400px;
+    padding-right:2em;
 }
